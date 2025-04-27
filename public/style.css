@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #d6e4f0, #f0f4f8);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form input,
+form button {
+  margin-bottom: 12px;
+}
+
+input[type="url"],
+input[type="text"],
+input[type="datetime-local"] {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: 0.2s ease;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2);
+}
+
+button {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ac9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+li span {
+  display: block;
+  margin-bottom: 8px;
+}
+
+li a {
+  font-weight: 600;
+  color: #4a90e2;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+li small {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+li .btn {
+  margin-right: 5px;
+  margin-top: 4px;
+}
+
+#shortened-urls {
+  display: block;
+}
+.spinner-border {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+/* Toast Styles */
+#toast {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  z-index: 9999;
+}
+
+#toast.show {
+  opacity: 1;
+}
